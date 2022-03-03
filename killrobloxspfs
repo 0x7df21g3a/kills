@@ -1,0 +1,156 @@
+-----KILL SAFE MODE
+
+	local Button2 = Section10:CreateButton("Kill All", function()
+		run2 = not run2
+    local function tp()
+    for i, player in ipairs(game.Players:GetChildren()) do
+    if player.Character and player.Character:FindFirstChild("HumanoidRootPart") and player.Character:FindFirstChild("Humanoid").MaxHealth <= game.Players.LocalPlayer.Character:FindFirstChild("Humanoid").MaxHealth then
+    player.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame + game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.lookVector * 1
+    end
+    end
+    end
+     
+    if run2 then
+    while wait() do
+    if run2 then
+    tp()
+    end
+    end
+    end
+    end)
+
+	local Button2 = Section10:CreateButton("Kill Innocent", function()
+		run6 = not run6
+    local function tp()
+    for i, player in ipairs(game.Players:GetChildren()) do
+    if player.Character and player.Character:FindFirstChild("HumanoidRootPart") and game.Players[player.Name].PrivateStats.Reputation.Value == 0 and player.Character:FindFirstChild("Humanoid").MaxHealth <= game.Players.LocalPlayer.Character:FindFirstChild("Humanoid").MaxHealth  then
+    player.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame + game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.lookVector * 1
+    end
+    end
+    end
+     
+    if run6 then
+    while wait() do
+    if run6 then
+    tp()
+    end
+    end
+    end
+    end)
+
+	local Button2 = Section10:CreateButton("Kill Heroes", function()
+		run7 = not run7
+    local function tp()
+    for i, player in ipairs(game.Players:GetChildren()) do
+    if player.Character and player.Character:FindFirstChild("HumanoidRootPart") and game.Players[player.Name].PrivateStats.Reputation.Value >= 1 and player.Character:FindFirstChild("Humanoid").MaxHealth <= game.Players.LocalPlayer.Character:FindFirstChild("Humanoid").MaxHealth  then
+    player.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame + game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.lookVector * 1
+    end
+    end
+    end
+     
+    if run7 then
+    while wait() do
+    if run7 then
+    tp()
+    end
+    end
+    end
+	end)
+
+	local Button2 = Section10:CreateButton("Kill Villians", function()
+		run8 = not run8
+    local function tp()
+    for i, player in ipairs(game.Players:GetChildren()) do
+    if player.Character and player.Character:FindFirstChild("HumanoidRootPart") and game.Players[player.Name].PrivateStats.Reputation.Value <= -1 and player.Character:FindFirstChild("Humanoid").MaxHealth <= game.Players.LocalPlayer.Character:FindFirstChild("Humanoid").MaxHealth  then
+    player.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame + game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.lookVector * 1
+    end
+    end
+    end
+     
+    if run8 then
+    while wait() do
+    if run8 then
+    tp()
+    end
+    end
+    end
+	end)
+
+	-----KILL UNSAFE MODE
+
+	local Button2 = Section11:CreateButton("Kill All", function()
+		run = not run
+		local function tp()
+		for i, player in ipairs(game.Players:GetChildren()) do
+		if player.Character and player.Character:FindFirstChild("HumanoidRootPart") then
+		player.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame + game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.lookVector * 1
+		end
+		end
+		end
+		if run then
+		while wait() do
+		if run then
+		tp()
+		end
+		end
+		end
+    end)
+
+
+	local Button2 = Section11:CreateButton("Kill Innocent", function()
+		run3 = not run3
+    local function tp()
+    for i, player in ipairs(game.Players:GetChildren()) do
+    if player.Character and player.Character:FindFirstChild("HumanoidRootPart") and game.Players[player.Name].PrivateStats.Reputation.Value == 0 then
+    player.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame + game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.lookVector * 1
+    end
+    end
+    end
+     
+    if run3 then
+    while wait() do
+    if run3 then
+    tp()
+    end
+    end
+    end
+    end)
+
+
+	local Button2 = Section11:CreateButton("Kill Heroes", function()
+		run4 = not run4
+    local function tp()
+    for i, player in ipairs(game.Players:GetChildren()) do
+    if player.Character and player.Character:FindFirstChild("HumanoidRootPart") and game.Players[player.Name].PrivateStats.Reputation.Value >= 1 then
+    player.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame + game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.lookVector * 1
+    end
+    end
+    end
+     
+    if run4 then
+    while wait() do
+    if run4 then
+    tp()
+    end
+    end
+    end
+	end)
+
+	local Button2 = Section11:CreateButton("Kill Villians", function()
+		run5 = not run5
+		local function tp()
+		for i, player in ipairs(game.Players:GetChildren()) do
+		if player.Character and player.Character:FindFirstChild("HumanoidRootPart") and game.Players[player.Name].PrivateStats.Reputation.Value <= -1 then
+		player.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame + game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.lookVector * 1
+		end
+		end
+		end
+		 
+		if run5 then
+		while wait() do
+		if run5 then
+		tp()
+		end
+		end
+		end
+	end)
